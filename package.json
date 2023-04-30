@@ -1,0 +1,11 @@
+{
+  "name": "mta-bluesky-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@atproto/api": "^0.2.11",
+    "dotenv": "^16.0.3"
+  }
+}
