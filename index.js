@@ -82,4 +82,8 @@ async function retrieveAndPostMTAStatus() {
   fs.writeFileSync('progress.json', JSON.stringify(progress))
 }
 
-await start()
+var three_minutes = 3 * 60 * 1000
+setInterval(async () => {
+  console.log("Running MTA Subway Script");
+  await start()
+}, three_minutes)
