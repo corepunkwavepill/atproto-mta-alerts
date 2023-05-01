@@ -85,5 +85,5 @@ async function retrieveAndPostMTAStatus() {
 var three_minutes = 3 * 60 * 1000
 setInterval(async () => {
   console.log("Running MTA Subway Script");
-  await start()
+  await retrieveAndPostMTAStatus()
 }, three_minutes)
